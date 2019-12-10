@@ -6411,7 +6411,7 @@ namespace detail
   namespace avoid_stdio_include
   {
 #ifndef __APPLE__
-    extern "C" ptrdiff_t write(int, const void *, size_t);
+    extern ptrdiff_t write(int, const void *, size_t);
 #endif
   }  // namespace avoid_stdio_include
   inline void do_fatal_exit(const char *msg)
